@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Realize o registro de um novo ato.</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="/Jacana/rec/folhas/registrarumato.css" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montreal" type="text/css"/> 
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <script 
+            
+            src="/Jacana/execucao/processamento.ato/processamento.ato.uteis/JS/JNManipulaInterface.js">
+ 
+        </script>
+    
+    </head>
+    
+    <body               id="jacana_body_1">
+        
+        <section        id="jacana_section_1">
+        
+            <div        id="jacana_cont_principal">
+            
+                <a      id="jacana_tit_topo_principal">
+                    Seja muito bem vindo ao <b>registro de um novo ato.</b><br>
+                    Preencha corretamente <b>abaixo.</b>
+                </a>
+                
+            <br>
+            <br>
+             
+
+            
+                
+            <form       id="jacana_formulario" method="get" action="/Jacana/JNAplicacaoAto">
+            
+                <br>
+                
+                <p id="jacana_pdiv_1">
+                
+                <label for="jacana_abs_escrevente">Nome escrevente:</label>
+                <input 
+                type="text" name="_d_escrevente" id="jacana_abs_escrevente" 
+                class="jacana_modulo_insercao" maxlength="42">
+                
+                <label for="jacana_abs_num_protocolo">Numero Protocolo:</label>
+                <input 
+                type="number" name="_d_protocolo" id="jacana_abs_num_protocolo" 
+                class="jacana_modulo_insercao" >
+                
+                </p>
+                
+                <p id="jacana_pdiv_2">
+                    
+                <label for="jacana_abs_interessado">Nome interessado:</label>
+                <input 
+                type="text" name="_d_interessado" id="jacana_abs_interessado" 
+                class="jacana_modulo_insercao" maxlength="42">
+                
+                <label for="jacana_abs_esp_documento">Especie de documento:</label>
+                
+                <select
+                name="_d_documento" id="jacana_abs_esp_documento" 
+                class="jacana_modulo_insercao" >
+                
+                    
+                    
+ <option value="Escritura Pública">1,Escritura Pública</option>
+ <option value="Instrumento Particular">2,Instrumento Particular</option>
+ <option value="Requeriment">3,Requerimento</option>
+ <option value="Mandado">4,Mandado</option>
+ <option value="Notificação">5,Notificação</option>
+ <option value="Penhora Online">6,Penhora Online</option>
+ <option value="Formal Partilha">7,Formal Partilha</option>
+ <option value="Retificaçã">8,Retificação</option>
+ <option value="Carta de Sentença">9,Carta de Sentença</option>
+ <option value="Usucapião">10,Usucapião</option>
+ <option value="Carta de Adjudicação">11,Carta de Adjudicação</option>
+ <option value="Oficio">12,Oficio</option>
+ <option value="Cédula">13,Cédula</option>
+ <option value="Ex-Oficio">14,Ex-Oficio</option>
+ <option value="Certidão">15,Certidão</option>
+ <option value="Regularização">16,Regularização</option>
+                    
+                    
+                    
+                </select>
+                    
+                </p>
+                
+                <p id="jacana_pdiv_3">
+                
+                <label for="jacana_abs_num_matricula">Numero matricula:</label>
+                <input 
+                type="number" name="_d_matricula" id="jacana_abs_num_matricula" 
+                class="jacana_modulo_insercao" >
+                
+                <label for="jacana_abs_livro">Livro especifico:</label>
+                <input 
+                type="text" name="_d_livro" id="jacana_abs_livro" 
+                class="jacana_modulo_insercao" maxlength="12">
+                
+                
+                </p>
+                
+                <p id="jacana_pdiv_4">
+                
+                <label for="jacana_abs_esp_servico">Natureza de servico:</label>
+                
+                <select
+                name="_d_servico" id="jacana_abs_esp_servico" 
+                class="jacana_modulo_insercao" >
+                
+                 
+                    <option value="RRI"> RRI </option>
+                    <option value="RTD"> RTD </option>
+                    <option value="RPJ"> RPJ </option>
+                    
+                    
+                </select>
+                
+                <label for="jacana_abs_esp_aato">Enquadramento de ato:</label>
+                
+                <select
+                name="_d_ato" id="jacana_abs_esp_aato" 
+                class="jacana_modulo_insercao" >
+                
+                    
+<option value="Livro-2R-RRI"> 1,Livro-2R-RRI </option>
+<option value="Livro-2A-RR"> 2,Livro-2A-RRI </option>
+<option value="Prenotação-RRI"> 3,Prenotação-RRI </option>
+<option value="Certidão-RRI"> 4,Certidão-RRI </option>
+<option value="Abertura-RRI"> 5,Abertura-RRI </option>
+<option value="Notificação-Intimação-RRI"> 6,Notificação-Intimação-RRI </option>
+<option value="Prenotação-Desconto-RRI"> 7,Prenotação-Desconto-RRI </option>
+<option value="Livro-2R-RRI-GG"> 8,Livro-2R-RRI-GG </option>
+<option value="Livro-2A-RRI-G"> 9,Livro-2A-RRI-GG </option>
+<option value="Certidão-RRI-GG"> 10,Certidão-RRI-GG </option>
+<option value="Informação-Verbal-ou-Eletrônica-RRI"> 11,Informação-Verbal-ou-Eletrônica-RRI </option>
+<option value="Visualização-eletrônica-de-matrícula-RR"> 12,Visualização-eletrônica-de-matrícula-RRI </option>
+<option value="Notificação-RTD"> 13,Notificação-RTD </option>
+<option value="Registros-RTD-LB"> 14,Registros-RTD-LB </option>
+<option value="Registro-RPJ-L"> 15,Registro-RPJ-LA </option>
+<option value="Livro 3R-RRI"> 16,Livro 3R-RRI </option>
+<option value="Certidão-RRI-SP"> 17,Certidão-RRI-SP </option>
+<option value="Prenotação-RRI-GG"> 18,Prenotação-RRI-GG </option>
+<option value="Certidão-RRI-G"> 19,Certidão-RRI-G </option>
+<option value="Livro-2R-RRI-G"> 20,Livro-2R-RRI-G </option>
+<option value="Livro-2A-RRI-G"> 21,Livro-2A-RRI-G </option>
+<option value="Abertura-RRI-SP"> 22,Abertura-RRI-SP </option>
+<option value="Livro-2R-RRI-SP"> 23,Livro-2R-RRI-SP </option>
+<option value="Livro- 2A-RRI-SP"> 24,Livro- 2A-RRI-SP </option>
+<option value="Abertura-RRI-G"> 25,Abertura-RRI-G </option>
+<option value="Abertura-RRI-GG"> 26,Abertura-RRI-GG </option>
+<option value="Certidão-RPJ"> 27,Certidão-RPJ </option>
+<option value="Condomínio-RRI"> 28,Condomínio-RRI </option>
+<option value="Incorporação-RRI"> 29,Incorporação-RRI </option>
+<option value="Loteamento-RRI"> 30,Loteamento-RRI </option>
+<option value="Exame-e-álculo-RRI"> 31,Exame-e-álculo-RRI </option>
+<option value="Livro-3A-RRI"> 32,Livro-3A-RRI </option>
+<option value="Visualização-eletrônica-de-documento-RRI"> 33,Visualização-eletrônica-de-documento-RRI </option>
+<option value="Certidão-RTD"> 34,Certidão-RTD </option>
+<option value="Prenotação-RRI-G"> 35,Prenotação-RRI-G </option>
+<option value="Busca-RPJ"> 36,Busca-RPJ </option>
+<option value="Busca-RTD"> 37,Busca-RTD </option>
+<option value="Notificação-Intimação-RRI-G"> 38,Notificação-Intimação-RRI-G </option>
+<option value="Notificação-Intimação-RRI-GG"> 39,Notificação-Intimação-RRI-GG </option>
+<option value="Notificação-Intimação-RRI-SP"> 40,Notificação-Intimação-RRI-SP </option>
+<option value="Informação-Eletrônica-RRI-G"> 41,Informação-Eletrônica-RRI-G </option>
+<option value="Informação-Eletrônica-RRI-GG"> 42,Informação-Eletrônica-RRI-GG </option>
+<option value="Informação-Eletrônica-RRI-SP"> 43,Informação-Eletrônica-RRI-SP </option>
+<option value="Prenotação-Desconto-RRI-G"> 44,Prenotação-Desconto-RRI-G </option>
+<option value="Informação-Verbal-RRI-G"> 45,Informação-Verbal-RRI-G </option>
+<option value="Informação-Verbal-RRI-GG"> 46,Informação-Verbal-RRI-GG </option>
+<option value="Informação-Verbal-RRI-SP"> 47,Informação-Verbal-RRI-SP </option>
+<option value="Exame-e-Cálculo-RRI-G"> 48,Exame-e-Cálculo-RRI-G </option>
+<option value="Exame-e-Cálculo-RRI-GG"> 49,Exame-e-Cálculo-RRI-GG </option>
+<option value="Exame-e-Cálculo-RRI-SP"> 50,Exame-e-Cálculo-RRI-SP </option>
+<option value="Visualização-eletrônica-de-documento-RRI-G"> 51,Visualização-eletrônica-de-documento-RRI-G </option>
+<option value="Visualização-eletrônica-de-matrícula-RRI-G"> 52,Visualização-eletrônica-de-matrícula-RRI-G </option>
+<option value="Visualização-eletrônica-de-documento-RRI-GG"> 53,Visualização-eletrônica-de-documento-RRI-GG </option>
+<option value="Visualização-eletrônica-de-matrícula-RRI-GG"> 54,Visualização-eletrônica-de-matrícula-RRI-GG </option>
+<option value="Visualização-eletrônica-de-documento-RRI-SP"> 55,Visualização-eletrônica-de-documento-RRI-SP </option>
+<option value="Visualização-eletrônica-de-matrícula-RRI-SP"> 56,Visualização-eletrônica-de-matrícula-RRI-SP </option>
+<option value="Prenotação-RRI-SP"> 57,Prenotação-RRI-SP </option>
+<option value="Averbação-RRI"> 58,Averbação-RRI </option>
+<option value="Averbação-RRI-G"> 59,Averbação-RRI-G </option>
+<option value="Averbação-RRI-SP"> 60,Averbação-RRI-SP </option>
+<option value="Averbação-RRI-GG"> 61,Averbação-RRI-GG </option>
+<option value="Condomínio-RRI-G"> 62,Condomínio-RRI-G </option>
+<option value="Condomínio-RRI-GG"> 63,Condomínio-RRI-GG </option>
+<option value="Condomínio-RRI-SP"> 64,Condomínio-RRI-SP </option>
+<option value="Incorporação-RRI-G"> 65,Incorporação-RRI-G </option>
+<option value="Incorporação-RRI-GG"> 66,Incorporação-RRI-GG </option>
+<option value="Incorporação-RRI-SP"> 67,Incorporação-RRI-SP </option>
+<option value="Loteamento-RRI-G"> 68,Loteamento-RRI-G </option>
+<option value="Registro-RPJ-LB"> 69,Registro-RPJ-LB </option>
+<option value="Registros-RTD-LC"> 70,Registros-RTD-LC </option>
+<option value="Livro 3A-RRI-G"> 71,Livro 3A-RRI-G </option>
+<option value="Livro 3A-RRI-GG"> 72,Livro 3A-RRI-GG </option>
+<option value="Livro 3A-RRI-SP"> 73,Livro 3A-RRI-SP </option>
+<option value="Livro 3R-RRI-G"> 74,Livro 3R-RRI-G </option>
+<option value="Livro 3R-RRI-GG"> 75,Livro 3R-RRI-GG </option>
+<option value="Livro 3R-RRI-SP"> 76,Livro 3R-RRI-SP </option>
+<option value="Loteamento-RRI-GG"> 77,Loteamento-RRI-GG </option>
+<option value="Loteamento-RRI-SP"> 78,Loteamento-RRI-SP </option>
+<option value="Registro-RPJ-LA-GG"> 79,Registro-RPJ-LA-GG </option>
+<option value="Registros-RTD-LB-GG"> 80,Registros-RTD-LB-GG </option>
+<option value="Certidão-RPJ-G"> 81,Certidão-RPJ-G </option>
+<option value="Certidão-RPJ-GG"> 82,Certidão-RPJ-GG </option>
+<option value="Certidão-RTD-G"> 83,Certidão-RTD-G </option>
+<option value="Certidão-RTD-GG"> 84,Certidão-RTD-GG </option>
+                    
+                    
+                    
+                </select>
+                    
+                    
+                </p>
+                
+                <center>
+                    
+                    <input type="submit" id="jacana_form_confirmar" value="Confirmar">
+                    
+                </center>
+            
+                <br>
+                
+            </form>
+                
+            </div>
+        
+            
+            
+            
+                <div id="jacana_img_ic_sysic_0">
+            
+                   <img src="/Jacana/rec/img/jn_sysicon_0.png"><br>
+                   <p style="color:WhiteSmoke"> Sistema Jaçanã (2016)</p>
+
+            
+                </div>
+            
+            
+        </section>
+
+
+    
+    <script>
+        
+    JNManipulaInterface.efeito_1_formulario( );
+    
+    </script>
+
+    </body>
+
+
+    
+    
+</html>

@@ -1,0 +1,31 @@
+
+(LINHA.MUNICIPAL)
+=>
+ci>ATL-9T
+cr>7110
+np>Centro - Rotativo Principal
+hpu>8:00_9:00_10:00_11:00_12:00_13:00_14:00_15:00_16:00_17:00_18:00
+hpe>11:30_13:30_15:30_17:30_19:30
+pit>Rodoviaria_Largo Pernambuco_Bairro do Rei_Vila da Pera_Bairro Espanha
+pp>2.90
+oc>U77 - Volkswagen Attello 3.2 2006_U78 - Volkswagen Attello 3.2 2009
+<=
+
+(COBRADOR)
+=>
+cun>FN13
+n>Antônio Pardo Rogério
+s>Masculino
+i>31
+<=
+
+(MOTORISTA)
+=>
+cun>FN002
+rat>Centro de Iguatunatu
+lo>7110
+n>Sérgio Almeida França
+s>Masculino
+i>29
+co>FN13
+<=

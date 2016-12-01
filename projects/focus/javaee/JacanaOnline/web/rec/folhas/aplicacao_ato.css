@@ -1,0 +1,68 @@
+
+body {
+    
+    background: WhiteSmoke;
+    
+}
+
+
+h1 {
+    
+    background: Orange;
+    color:White;
+    text-shadow: 0px 3px DarkOrange;
+    width: 56%;
+    height: 128px;
+    font-family: 'MontrealRegular';
+    font-weight: normal; 
+    display:none;
+    border-radius: 7px 7px 3px 3px;
+    text-align: center;
+    
+}
+
+h2 {
+    
+    background: Green;
+    color:White;
+    text-shadow: 0px 3px DarkGreen;
+    width: 40%;
+    height: 128px;
+    font-family: 'MontrealRegular';
+    font-weight: normal; 
+    display:none;
+    border-radius: 7px 7px 3px 3px;
+    text-align: center;
+    
+}
+
+h3 {
+    
+    background: Gray;
+    color:White;
+    text-shadow: 0px 1px LightGray;
+    width: 32%;
+    height: 128px;
+    font-family: 'MontrealRegular';
+    font-weight: normal; 
+    display:none;
+    border-radius: 7px 7px 3px 3px;
+    text-align: center;
+    
+}
+
+p {
+    
+    background: Orange;
+    color:White;
+    text-shadow: 0px 3px DarkOrange;
+    width: 60%;
+    height: 128px;
+    font-family: 'MontrealRegular';
+    font-size: 13px;
+    font-weight: normal; 
+    display:none;  
+    border-radius: 7px 7px 3px 3px;
+    text-align: center;
+    
+}

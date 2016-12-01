@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee">
+    <display-name>DVCOBSCHAT</display-name>
+    <servlet>
+        <servlet-name>ServCache</servlet-name>
+        <servlet-class>tech.dvco.privateuse.release.src.dvcobschat.manager.www.DVCOBSCHAT_1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DVCOBSCHAT_2</servlet-name>
+        <servlet-class>tech.dvco.privateuse.release.src.dvcobschat.manager.www.DVCOBSCHAT_2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DVCOBSCHAT_1</servlet-name>
+        <url-pattern>/DVCOBSCHAT_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DVCOBSCHAT_2</servlet-name>
+        <url-pattern>/DVCOBSCHAT_2</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>20</session-timeout>
+    </session-config>
+</web-app>

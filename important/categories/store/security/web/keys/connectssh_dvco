@@ -1,0 +1,1 @@
+ssh -vvv -i "./dvco_ec2_0_pk1.pem" root@ec2-52-67-17-44.sa-east-1.compute.amazonaws.com
